@@ -1,4 +1,4 @@
-const Card = require('../Models/utils/PointScheema');
+const Card = require('../Models/CardScheema');
 
 
 
@@ -9,9 +9,12 @@ module.exports = {
     },
     async store(req,res){
         const {title,description,value,date} = req.body;
+
+        const parsedDate = new Date(date);
+
         const card = await Card.create({
             title,
-            date,
+            date:parsedDate,
             description,
             value
         });
