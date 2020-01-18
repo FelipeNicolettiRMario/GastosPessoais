@@ -2,7 +2,7 @@ const mongo = require('mongoose');
 
 const Card = mongo.Schema({
     title:String,
-    date:Date,
+    date:String,
     description:String,
     value:Number
 
