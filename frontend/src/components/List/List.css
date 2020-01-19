@@ -1,0 +1,10 @@
+li{
+    float: left;
+    padding-left: 10px;   
+    background: #e6f2ff;
+    margin-left: 20px;
+    width: 250px;
+    height: 170px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+

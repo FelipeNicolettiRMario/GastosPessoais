@@ -1,0 +1,16 @@
+.listContainer{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    gap: 20px;
+}
+
+body{
+    background: #66b3ff;
+}
+
+.listContainer{
+    margin-top: 100px;
+}

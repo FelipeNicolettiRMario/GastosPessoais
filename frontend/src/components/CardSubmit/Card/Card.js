@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import React,{useState} from 'react';
-import apiURL from '../utils/api'
+import apiURL from '../../utils/api'
 
 import './Card.css';
 
