@@ -7,7 +7,6 @@ function List() {
     async function getData(){
         const response = await apiURL.get('/card');
         setCosts(response.data);
-        console.log(costs)
     }
     getData();
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import Header from './components/Header';
 import Card from './components/CardSubmit/Card/Card';
 import List from './components/List/ListFetch';
@@ -7,8 +7,7 @@ import './Main.css'
 
 function App() {
 
-  const items = List();
-  
+  const items  = List();
 
   return (
     <>

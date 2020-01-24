@@ -15,7 +15,8 @@ module.exports = {
             title,
             date,
             description,
-            value
+            value,
+            category
         });
     
         return res.json(card);

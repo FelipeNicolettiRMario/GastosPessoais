@@ -4,7 +4,8 @@ const Card = mongo.Schema({
     title:String,
     date:String,
     description:String,
-    value:Number
+    value:Number,
+    category:String
 
 });
 
