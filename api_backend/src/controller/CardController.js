@@ -8,7 +8,7 @@ module.exports = {
     },
 
     async store(req,res){
-        const {title,description,value,date} = req.body;
+        const {title,description,value,date,category} = req.body;
 
 
         const card = await Card.create({

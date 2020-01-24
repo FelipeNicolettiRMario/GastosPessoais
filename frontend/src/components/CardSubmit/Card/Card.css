@@ -3,7 +3,7 @@
 .submitCard{
     border: 1px solid;
     width: 400px;
-    height: 530px;
+    height: 570px;
     padding-left: 55px;
     background-color: #e6f2ff;
     box-shadow: 5px 5px 15px 5px #000000;
@@ -29,4 +29,10 @@ form{
     color: #666;
     border: 0;
     border-bottom: 1px solid #eee;
+}
+
+.submitCard select{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

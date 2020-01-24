@@ -8,6 +8,7 @@ function ListRender({item}){
             <h4 className="title"><b>{item.title}</b></h4>
             <p className="description-content"><b>Descrição:</b>{item.description}</p>
             <p className="value-content"><b>Valor:</b>R${item.value}</p>
+            <p className="category"><b>Categoria:</b>{item.category}</p>
             </div>
         </li>
     )

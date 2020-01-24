@@ -11,6 +11,8 @@ function Card(){
     const[date,setDate] = useState('');
     const[description,setDescription] = useState('');
     const[value,setValue] = useState(0);
+    const[category,setCategory] = useState("Lazer");
+
 
      async function insertCard(e){
         e.preventDefault();
@@ -19,15 +21,17 @@ function Card(){
            title,
            date,
            description,
-           value
+           value,
+           category
        }
-        
+       console.log(category)
        const response = await apiURL.post('/card',insertObject);
 
         setTitle('');
         setDate('');
         setDescription('');
         setValue(0);
+        setCategory('Lazer')
 
         return response;
 
@@ -50,6 +54,12 @@ function Card(){
                 <label>Valor do gasto</label>
                 <input type="number" name="value" value = {value} onChange={e => setValue(e.target.value)}/>
                 <br/>
+                <select name="category" value = {category} onChange = {e => setCategory(e.target.value)}> 
+                    <option value="lazer">Lazer</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="aprendizado">Aprendizado</option>
+                    <option value="alimentação">Alimentação</option>
+                </select> 
                 <input type="submit" value="Registrar" className="sendB"/>
             </div>
         </form>
