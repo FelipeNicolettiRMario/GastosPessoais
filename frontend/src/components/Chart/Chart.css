@@ -1,0 +1,14 @@
+.chart{
+    margin-left:370px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width:60%;
+    height:400px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    background-color: white;
+    padding-right: 10px;
+}
+.highchart{
+    width: 100%;
+}

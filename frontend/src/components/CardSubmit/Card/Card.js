@@ -1,31 +1,27 @@
 // eslint-disable-next-line
 import React,{useState} from 'react';
-import apiURL from '../../utils/api'
 
 import './Card.css';
 
 
-function Card(){
+function Card({onSubmit}){
 
     const[title,setTitle] = useState('');
     const[date,setDate] = useState('');
     const[description,setDescription] = useState('');
     const[value,setValue] = useState(0);
-    const[category,setCategory] = useState("Lazer");
-
+    const[category,setCategory] = useState("Lazer");    
 
      async function insertCard(e){
         e.preventDefault();
 
-       const insertObject = {
+       await onSubmit({
            title,
            date,
            description,
            value,
            category
-       }
-       console.log(category)
-       const response = await apiURL.post('/card',insertObject);
+       })
 
         setTitle('');
         setDate('');
@@ -33,9 +29,10 @@ function Card(){
         setValue(0);
         setCategory('Lazer')
 
-        return response;
 
         }
+
+
     return (
         <>
         <form onSubmit={insertCard}>
